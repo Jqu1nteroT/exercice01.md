@@ -1,0 +1,59 @@
+html{
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes fondo{
+	0%{background-color: black;}
+	25%{background-color: yellow;}
+	50%{background-color: green;}
+	75%{background-color: purple;}
+	100%{background-color: blue;}
+}
+
+@keyframes pelota{
+	0% {transform:translate(-800px, 400px);}
+	20%{transform:translateY(800px);}
+	40%{transform: translate(800px, 400px);}
+	60%{transform: translateY(0px);}
+	100%{transform: translate(-800px, 400px);}
+	/*100% {transform:translateX(800px);}*/
+}
+
+body{
+	font-family: serif, sans-serif;
+	border: 1px none;
+	background: white;
+	margin: auto;
+	height: 100%;
+	width: auto;
+}
+
+.anima{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	animation-name: fondo;
+	animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+	
+}
+
+.anima2{
+	animation-name: pelota;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-delay: 0s;
+	animation-fill-mode: none;
+	animation-direction:, alternate;
+	border-radius: 100%;
+	margin: auto;
+	width: 100px; 
+	height: 100px;
+	border: 2px solid;
+	border-color: white;
+	background: white;
+}
